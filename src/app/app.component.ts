@@ -9,5 +9,6 @@ export class AppComponent {
   
   title = 'Angular-Directives';
   displayPara = false;
+  value = 5;
 
 }

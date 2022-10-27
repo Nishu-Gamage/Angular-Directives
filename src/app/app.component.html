@@ -8,6 +8,14 @@
 <p [appBetterHighlight]="'yellow'" >Better Highlight Directive Works !__________( THIS IS THE RIGHT WAY TO CODE DIRECTIVE )</p>
 
 
-<!-------------- Use If else -------------->
+<!--------------- Use If else --------------->
 <P *ngIf="displayPara" >This is displayed only when displayPara is <b>TRUE</b></P>
 <div *appUnless="displayPara" ><P>This is displayed only when displayPara is <b>FALSE</b></P></div>
+
+
+<!----------------- Switch ------------------>
+<div [ngSwitch]="value">
+     <p *ngSwitchCase="10">10</p>
+     <p *ngSwitchCase="20">20</p>
+     <p *ngSwitchDefault>30</p>
+</div>
