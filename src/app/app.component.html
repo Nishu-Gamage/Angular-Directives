@@ -2,8 +2,12 @@
 <p appBasicHighlight>Basic Highlight Directive Works !__________( BUT THIS IS NOT THE RIGHT WAY TO CODE )</p>
 
 
-
 <!-------------- Better Way ------------------->
 <p appBetterHighlight >Better Highlight Directive Works !__________( THIS IS THE RIGHT WAY TO CODE DIRECTIVE )</p>
 <!-- <p appBetterHighlight [defaultColor]="'yellow'" [highlightColor]="'red'">Better Highlight Directive Works !__________( THIS IS THE RIGHT WAY TO CODE DIRECTIVE )</p> -->
 <p [appBetterHighlight]="'yellow'" >Better Highlight Directive Works !__________( THIS IS THE RIGHT WAY TO CODE DIRECTIVE )</p>
+
+
+<!-------------- Use If else -------------->
+<P *ngIf="displayPara" >This is displayed only when displayPara is <b>TRUE</b></P>
+<div *appUnless="displayPara" ><P>This is displayed only when displayPara is <b>FALSE</b></P></div>
